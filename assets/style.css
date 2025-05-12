@@ -182,7 +182,8 @@
   .bot5:hover {
     background-color: rgb(131, 189, 246);
   }
-  
+
+
 .img {
   display: flex;
   justify-content: center;
@@ -190,26 +191,47 @@
 }
 
 .img img {
-  width: 360px;   /* esticada mais que os 300px anteriores */
-  height: 120px;  /* aumentada um pouco na altura */
+  width: 860px;
+  height: 420px;
   object-fit: cover;
-  border-radius: 8px;
-  border: 2px solid #fff;
+  border-radius: 10px;
+  border: 2px solid #ffcaf5;
+  transition: all 0.4s ease;
 }
+
+/* Hover: zoom + borda colorida + brilho */
+.img img:hover {
+  transform: scale(1.08);
+  border-color: #faa8ec;
+  box-shadow: 0 0 20px #f57de1;
+}
+
+
+
+
+
+
+
 .ver-mais-button {
     display: inline-block;
-    padding: 6px 14px; /* Botão menor */
-    background-color: #f1afcf;
+    padding: 6px 14px; 
+    background-color: #f396c1;
     color: white;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px; /* Letra menor */
     border: none;
     border-radius: 6px;
-    margin-top: 12px; /* Espaço para descer o botão */
+    margin-top: 12px; 
     transition: background-color 0.3s;
 }
 
 .ver-mais-button:hover {
     background-color: #d98db3;
+}
+
+.fof{
+  max-height: 70px;
+  width: auto;
+  margin-right: 15px;
 }
